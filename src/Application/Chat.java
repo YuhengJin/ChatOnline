@@ -12,7 +12,7 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 
 import Application.Server.CommunicateThread;
-import Interface.Graphique;
+import Interfaces.Graphique;
 import Session.Session;
 
 public class Chat {
@@ -304,8 +304,9 @@ public class Chat {
 	
 	
 	// Envoyer au destinataire,on va char avec lui  (*chat+author+son port....)
+	
+	
 	public void chatWithOne(String nom) {
-
 		int destinationport = 0;
 		InetAddress clientAdress = null;
 		for (User user : users.getUsers()) {
@@ -314,18 +315,12 @@ public class Chat {
 				clientAdress = user.get_Address();
 			}
 		}
-		
-		System.out.println("Test3+++++++++++++++  destination port"+destinationport);
-		
 		String usernameString = getUserName();
 		if (destinationport != 0) {
 			Session s;
-			//s = new Session(InetAddress.getByName("localhost"), destinationport);
 			s = new Session(clientAdress, destinationport);
 			s.sendmesssage("*chat/" + usernameString + "/" + listeningport);
-
 		}
-
 	}
 	
 	
@@ -357,14 +352,12 @@ public class Chat {
 	}
 	
 	public Client getClient() {
-		System.out.println("Test11--------------------是否真的  get client");
 		while(client==null) {
 			
 		}
 		
 		
 		
-		System.out.println("Test10--------------------是否真的  get client"+client.getPort());
 		return client;
 	}
 

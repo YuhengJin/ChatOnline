@@ -24,7 +24,6 @@ public class User {
 	private Server server;
 	private Client client;
 	private List_users usersList ;
-    private BroadCastClient broadCast ;
     
 	public User (String pseudo,InetAddress address, int portServer)  {
 		this.connected = true;

@@ -1,11 +1,12 @@
-# ChatApplication
+# ChatApplication 1.0
 
 C'est une application qui sert a faire le clavardage entre des users en temps reel, ca pourra fonctionner par groupe ou juste un Chat 1 on 1. C'est la version ditribue, il n'y a pas le server centralise.
 Fonctionne sur locale ou plusieurs differentes machines.
 
 ## Getting Started
+Sous linux, entre dans le dossier ChatOnline et taper:  java -jar ChatApp.jar
 
-Lancer Graphique.java sur Eclipse (ChatApplication/Interface/Graphique.java)
+Ou sur Eclipse, lancer Graphique.java (ChatApplication/Interface/Graphique.java)
 
 ### Prerequisites
 
@@ -52,6 +53,7 @@ Java.Swing
 ## Versioning
 
 1.0 Beta
+2.0 Vois sur le repertoire https://github.com/YuhengJin/ChatApplication
 
 ## Authors
 

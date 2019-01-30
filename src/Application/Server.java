@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import Application.Server;
 import Application.Client.ListenServerMes;
-import Interface.Graphique;
+import Interfaces.Graphique;
 
 public class Server {
 

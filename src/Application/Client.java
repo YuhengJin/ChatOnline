@@ -13,7 +13,7 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-import Interface.Graphique;
+import Interfaces.Graphique;
 
 public class Client {
 
